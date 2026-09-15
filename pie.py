@@ -1,10 +1,11 @@
 #LK6, pie.py
 
-everything = 42
+zip_cod = "80202"
 
-pie = 3.145
+price1 = "10"
 
-print(f"the varibles are {pie} and it is saved at {id(pie)}")
+print(f"the varibles are {zip_cod} and it is saved at {id(zip_cod)}")
 
-print(f"the varibles are {everything} and it is saved at {id(everything)}")
+print(f"the varibles are {price1} and it is saved at {id(price1)}")
 
+ 

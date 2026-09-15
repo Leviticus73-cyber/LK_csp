@@ -1,17 +1,16 @@
 #LK6, fixing input
 
-# when you want a number
+# when you want a name
 
 while True:
-    try:
-        name = int(input("tell me your name:"))
+    name = input("tell me your 1st name:").title().strip()
+    if name.isnumeric():
+            print("that isn'ts a name silly")
+    elif " " in  name:
+        print("I ask for your frist name")
+    else:
+        print (f"hi" ,name ," how are you")
         break
-    except:
-        print("that isn't a a name")
-    
-print(f"hi" ,name ,", how are you")
-
-
 
 
 

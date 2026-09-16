@@ -9,7 +9,7 @@ while True:
     elif " " in  name:
         print("I ask for your frist name")
     else:
-        print (f"hi" ,name ," how are you")
+        print (f"hi",name," how are you")
         break
 
 

@@ -1,14 +1,16 @@
 #LK6, your budget
 
-income = float(input("what is your monthly income:"))
+income = float(input("what is your monthly income:$"))
 
-rent = float(input("what is your rent monthly:"))
+rent = float(input("what is your rent monthly:$"))
 
-util = float(input("what do you pay monthly:"))
+util = float(input("what do you pay monthly:$"))
 
-groc = float(input("what do yo pay for goceries monthly:"))
+groc = float(input("what do yo pay for goceries monthly:$"))
 
-tran = float(input("what is your monthly payment to travel:"))
+tran = float(input("what is your monthly payment to travel:$"))
 
-
-print(income/rent*100)
+print (f"{rent/income*100}")
+print (f"{util/income*100}")
+print (f"{groc/income*100}")
+print (f"{tran/income*100}")

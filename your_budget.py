@@ -8,5 +8,7 @@ util = float(input("what do you pay monthly:"))
 
 groc = float(input("what do yo pay for goceries monthly:"))
 
-tran = float(input("what is your monthly payment to travel"))
-    
+tran = float(input("what is your monthly payment to travel:"))
+
+
+print(income/rent*100)

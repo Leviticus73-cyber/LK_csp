@@ -5,7 +5,7 @@ up = False
 low = False
 num = False
 sym = False
-symbols = "!@#$%^&*"
+
 score = 0
 pas = input("type in your Password:")
 lent =len(pas)
@@ -13,33 +13,51 @@ lent =len(pas)
 
 
 
-
-if lent >= 8:
-    al8c = True
-
 for letter in pas:
-    if letter.isupper():
-        up==True
-    if letter in symbols:
-        sym==True
-    if letter.islower():
-        low==True
-    if letter.isnumeric():
-        num==True
-if al8c == True:
+    if lent >= 8:
+        al8c = True
+
+if any(letter.isupper() for letter in pas):
+    up = True
+
+if any(letter.islower() for letter in pas):
+    low = True
+
+if any(letter.isdigit() for letter in pas):
+    num = True
+
+if any(letter in "!@#$%^&*" for letter in pas):
+    sym = True
+
+    if al8c == True:
         score += 1
-if up == True:
-    score += 1
-if low == True:
+
+    if up == True:
+     score += 1
+
+    if low == True:
         score += 1
-if num == True:
+
+    if num == True:
         score += 1
-if sym == True:
+
+    if sym == True:
         score += 1
-if score == 5:
-     strong = "strong"
-elif score >= 3:
-    strong = "medium"
-else: 
-     strong = "weak"
-print ("your password is "+strong+".")
+    
+    if score == 5:
+        strong = "strong"
+
+    elif score >= 3:
+        strong = "medium"
+
+    else: 
+        strong = "weak"
+
+print("\nPassword:", pas) 
+print("Length:", al8c)
+print("Uppercase:", up)
+print("Lowercase:", low)
+print("Number:", num)
+print("Symbol:", sym)
+print("Strength:", strong)
+

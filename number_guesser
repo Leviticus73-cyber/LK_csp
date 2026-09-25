@@ -1,0 +1,23 @@
+#LK6, Number guessing Game
+
+
+import random
+num = random.randint(1,100)
+nmb = 1
+print ("pick a number between 0 and 101")
+while True:
+   name = int(input(f"guess #{nmb}:"))
+   if name == num:
+       print ("you win")
+       break
+   elif nmb == 6:
+      print(f"you lose the number was {num}")
+      break
+   elif name > num:
+       print ("number is lower")
+       nmb += 1
+   else:
+       print ("number is higher")
+       nmb += 1
+
+

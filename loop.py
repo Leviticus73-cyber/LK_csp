@@ -13,7 +13,7 @@ while count <= 10:
 
 import random
 
-goose = random.randint(1,99999)
+goose = random.randint(1,100)
 duck = 1
 
 while True:
@@ -26,3 +26,24 @@ print(duck)
 
 
 sibling =["caleb", "marissa", "chloe", "kam", "remmy", "andy", "daisy", "unknown"]
+
+
+print (sibling[5])
+print(sibling)
+sibling.append("someone")
+sibling.insert(0,"levi")
+print(sibling)
+
+print(sibling.pop(7))
+sibling.pop(7)
+
+
+print(sibling)
+
+for number in range (1,11,1):
+    print(number)
+
+
+
+for sibling in sibling:
+    print(sibling + " king")

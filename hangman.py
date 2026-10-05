@@ -3,7 +3,9 @@
 import random
 
 
-file = open("")
+with open("hangman.txt", "r") as file:
+    word = file.read
+
 #create a list of 10 words on a seper page
 
 
@@ -25,7 +27,7 @@ print("""
     __|___________
 """)
 
-
+print(word)
 # under socre 
 # out side of the word to 
 # in game win/lose while True loop

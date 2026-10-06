@@ -1,1 +1,10 @@
-word, ironman, batman, letters, cheese, smile, seven, right, left, hangman,
+word
+ironman
+batman
+letters
+cheese
+smile
+seven
+right
+left
+hangman
